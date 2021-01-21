@@ -1,0 +1,17 @@
+Convert legacy file(s) to System Description
+Used executable: C:\Vector\CBD1500710_D05_Canoeemu\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe
+Arguments: "C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\IndicatorsDB.dbc" -o "C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\LegacyConverterResults\1599560908308-0\ConvertedLegacy" -r 42 -v 19
+
+Vector Legacy Database Converter
+Version: 1.8.17.0
+Copyright (c) 2017 Vector Informatik GmbH.
+License is restricted to the usage with CBD1500710 (D05) for MSR_Vector_SLP4.
+
+[info] Command line: C:\Vector\CBD1500710_D05_Canoeemu\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe "C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\IndicatorsDB.dbc" -o "C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\LegacyConverterResults\1599560908308-0\ConvertedLegacy" -r 42 -v 19
+[info] Converting DBC file C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\IndicatorsDB.dbc
+[info] Writing System Description...
+
+C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\LegacyConverterResults\1599560908308-0\ConvertedLegacy.arxml
+Elapsed time: 1.304 seconds
+0 Errors
+0 Warnings

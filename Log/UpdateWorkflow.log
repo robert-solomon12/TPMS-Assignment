@@ -1,0 +1,142 @@
+2020-09-08 - 11:28:39
+Workflow 'Update workflow.' started.
+              Using DaVinci Configurator (beta)5.16.60 SP7 (x86_64).
+ 11:28:39 - Action 'Validate workflow environment' started.
+ 11:28:39 - Action 'Validate dpa file' started.
+ 11:28:40 - Action 'Validate dpa file' successfully finished.
+ 11:28:40 - Action 'SLP conformance check' started.
+ 11:28:40 - Action 'SLP conformance check' successfully finished.
+ 11:28:40 - Action 'Validate input files' started.
+ 11:28:40 - Action 'Validate input files' successfully finished.
+ 11:28:40 - Action 'Validate workflow environment' successfully finished.
+ 11:28:40 - Action 'File Pre Processing' started.
+ 11:28:40 - Action 'Processing the input files' started.
+ 11:28:40 - Action 'Processing' started.
+              Start converting legacy file(s): C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\IndicatorsDB.dbc.
+ 11:28:40 - Action 'Converting legacy file(s) to AUTOSAR files' started.
+ 11:28:40 - Action 'Converting legacy file(s) to AUTOSAR files' started.
+              Convert legacy file(s) to System Description.
+              Used executable: C:\Vector\CBD1500710_D05_Canoeemu\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe.
+              Arguments: "C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\IndicatorsDB.dbc" -o "C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\LegacyConverterResults\1599560920159-0\ConvertedLegacy" -r 42 -e -v 19.
+              
+              Vector Legacy Database Converter.
+              Version: 1.8.17.0.
+              Copyright (c) 2017 Vector Informatik GmbH.
+              License is restricted to the usage with CBD1500710 (D05) for MSR_Vector_SLP4.
+              
+              [info] Command line: C:\Vector\CBD1500710_D05_Canoeemu\Generators\LegacyDb2SystemDescrConverter\LegacyDb2SystemDescrConverter.exe "C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\IndicatorsDB.dbc" -o "C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\LegacyConverterResults\1599560920159-0\ConvertedLegacy" -r 42 -e -v 19.
+              [info] Converting DBC file C:\Users\Brendan\Documents\Academic Notes etc\Automotive Software Development\IndicatorsDB.dbc.
+              [info] Writing System Description...
+              [info] Writing 1 ECU Extracts...
+              
+              C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\LegacyConverterResults\1599560920159-0\ConvertedLegacy.arxml.
+              C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\LegacyConverterResults\1599560920159-0\ConvertedLegacy_BCM.arxml.
+              Elapsed time: 1.260 seconds.
+              0 Errors.
+              0 Warnings.
+ 11:28:41 - Action 'Converting legacy file(s) to AUTOSAR files' successfully finished.
+ 11:28:41 - Action 'Converting legacy file(s) to AUTOSAR files' successfully finished.
+              Legacy converter result file: C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\LegacyConverterResults\1599560920159-0\ConvertedLegacy_BCM.arxml.
+ 11:28:41 - Action 'Processing' successfully finished.
+ 11:28:41 - Action 'Evaluate system extract paths' started.
+ 11:28:41 - Action 'Evaluate system extract paths' successfully finished.
+ 11:28:41 - Action 'Processing the input files' successfully finished.
+ 11:28:41 - Action 'File Pre Processing' successfully finished.
+ 11:28:42 - Action 'Creating back up' started.
+              Create backup folder: 'C:\Vector\CBD1500710_D05_Canoeemu\Demo\Template Project\Backups\backup_dvpa_2020-09-08_11-28-39'.
+              Copied project file from: 'C:\Vector\CBD1500710_D05_Canoeemu\Demo\Template Project\Template.dpa' to 'C:\Vector\CBD1500710_D05_Canoeemu\Demo\Template Project\Backups\backup_dvpa_2020-09-08_11-28-39\Template.dpa'.
+              Copied ECUC folder from: 'C:\Vector\CBD1500710_D05_Canoeemu\Demo\Template Project\Config\ECUC' to 'C:\Vector\CBD1500710_D05_Canoeemu\Demo\Template Project\Backups\backup_dvpa_2020-09-08_11-28-39\Config\ECUC'.
+              Copied DaVinci Developer Workspace folder from: 'C:\Vector\CBD1500710_D05_Canoeemu\Demo\Template Project\Config\Developer' to 'C:\Vector\CBD1500710_D05_Canoeemu\Demo\Template Project\Backups\backup_dvpa_2020-09-08_11-28-39\Config\Developer'.
+              Copied BSW internal behavior folder from: 'C:\Vector\CBD1500710_D05_Canoeemu\Demo\Template Project\Config\InternalBehavior' to 'C:\Vector\CBD1500710_D05_Canoeemu\Demo\Template Project\Backups\backup_dvpa_2020-09-08_11-28-39\Config\InternalBehavior'.
+              Copied SWC files folder from: 'C:\Vector\CBD1500710_D05_Canoeemu\Demo\Template Project\Config\ServiceComponents' to 'C:\Vector\CBD1500710_D05_Canoeemu\Demo\Template Project\Backups\backup_dvpa_2020-09-08_11-28-39\Config\ServiceComponents'.
+              Copied Application Components files folder from: '[Ljava.lang.String;@5fa83ff2' to 'C:\Vector\CBD1500710_D05_Canoeemu\Demo\Template Project\Backups\backup_dvpa_2020-09-08_11-28-39\Config\ApplicationComponents'.
+              Copied Definition Restriction files folder from: 'C:\Vector\CBD1500710_D05_Canoeemu\Demo\Template Project\DefRestrict' to 'C:\Vector\CBD1500710_D05_Canoeemu\Demo\Template Project\Backups\backup_dvpa_2020-09-08_11-28-39\DefRestrict'.
+ 11:28:42 - Action 'Creating back up' successfully finished.
+ 11:28:42 - Action 'Close Project' started.
+ 11:28:43 - Action 'Close Project' successfully finished.
+ 11:28:47 - Action 'Create copy of the Project' started.
+              Copy project 'C:\Vector\CBD1500710_D05_Canoeemu\Demo\Template Project' to 'C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0'...
+              Adjusting DPA file of copied project...
+ 11:28:48 - Action 'Create copy of the Project' successfully finished.
+ 11:28:48 - Action 'Prepare DaVinci Developer update data' started.
+ 11:28:48 - Action 'Prepare DaVinci Developer update data' successfully finished.
+ 11:28:48 - Action 'Prepare data for update' started.
+ 11:28:48 - Action 'Prepare data for update' successfully finished.
+ 11:28:48 - Action 'Prepare System Extract' started.
+ 11:28:50 - Action 'Preprocessing System Extract' started.
+ 11:28:50 - Action 'Preprocessing System Extract' successfully finished.
+ 11:28:50 - Action 'Create OEM Communication Extract' started.
+ 11:28:50 - Action 'Create OEM Communication Extract' successfully finished.
+ 11:28:50 - Action 'Prepare System Extract' successfully finished.
+ 11:28:50 - Action 'Updating the project' started.
+ 11:28:59 - Action 'Generate ECU configuration' started.
+ 11:29:08 - Action 'Generate ECU configuration' successfully finished.
+ 11:29:08 - Action 'Update ECU configuration' started.
+              No Package path available for module configuration: Com. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: E2EXf. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: Rte. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: Os. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: VTTCntrl. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: ComXf. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: ComM. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: EcuC. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: VTTEcuC. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: SomeIpXf. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: VTTMcu. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: CanIf. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: Can. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: Det. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: PduR. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: EcuM. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: CanSM. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: BswM. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: VTTOs. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: VTTCan. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: Mcu. Default /ActiveEcuC is used instead.
+              No Package path available for module configuration: Nm. Default /ActiveEcuC is used instead.
+ 11:29:17 - Action 'Update ECU configuration' successfully finished.
+ 11:29:17 - Action 'Updating the project' successfully finished.
+ 11:29:17 - Action 'Adapt project file' started.
+ 11:29:18 - Action 'Adapt project file' successfully finished.
+ 11:29:18 - Action 'Generate update report' started.
+ 11:29:36 - Action 'Generate update report' successfully finished.
+ 11:29:36 - Action 'Execute Solving Actions' started.
+              Executing all Preferred-Solving-Actions...
+              All Preferred-Solving-Actions done.
+              Executing update specific Preferred-Solving-Actions...
+              Update specific Preferred-Solving-Actions done.
+ 11:29:49 - Action 'Execute Solving Actions' successfully finished.
+ 11:29:49 - Action 'Update DaVinci Developer Workspace' started.
+              ﻿08 Sep 2020 11:29:54 - Opening workspace 'C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.dcf'...
+              08 Sep 2020 11:29:56 - Loading file PlatformTypes_AR4.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\AUTOSAR\PlatformTypes_AR4.arxml).
+              08 Sep 2020 11:29:56 - Loading file BswM_swc.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\ServiceComponents\BswM_swc.arxml).
+              08 Sep 2020 11:29:56 - Loading file ComM_swc.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\ServiceComponents\ComM_swc.arxml).
+              08 Sep 2020 11:29:56 - Loading file Det_swc.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\ServiceComponents\Det_swc.arxml).
+              08 Sep 2020 11:29:56 - Loading file EcuM_swc.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\ServiceComponents\EcuM_swc.arxml).
+              08 Sep 2020 11:29:57 - Loading file DataTypes.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\DataTypes.arxml).
+              08 Sep 2020 11:29:57 - Loading file Packages.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Packages.arxml).
+              08 Sep 2020 11:29:57 - Loading file PortInterfaces.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\PortInterfaces.arxml).
+              08 Sep 2020 11:29:57 - Loading file Template.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.arxml).
+              08 Sep 2020 11:29:57 - Opened workspace 'C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.dcf' successfully.
+              08 Sep 2020 11:29:58 - Start import.
+              08 Sep 2020 11:29:58 - Importing file (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\System\ConvertedLegacy_BCM.arxml).
+              08 Sep 2020 11:29:59 - Merging imported data.
+              08 Sep 2020 11:30:00 - Finished import.
+              08 Sep 2020 11:30:00 - Saving workspace 'C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.dcf'...
+              08 Sep 2020 11:30:01 - Saving file DataTypes.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\DataTypes.arxml).
+              08 Sep 2020 11:30:01 - Saving file Packages.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Packages.arxml).
+              08 Sep 2020 11:30:01 - Saving file Template.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.arxml).
+              08 Sep 2020 11:30:01 - Saved workspace 'C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.dcf' successfully.
+              08 Sep 2020 11:30:01 - Closing workspace 'C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.dcf'...
+              08 Sep 2020 11:30:01 - Closed workspace 'C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.dcf' successfully.
+              OK.
+ 11:30:03 - Action 'Update DaVinci Developer Workspace' successfully finished.
+ 11:30:03 - Action 'Update RTE configuration' started.
+ 11:30:08 - Action 'Update RTE configuration' successfully finished.
+ 11:30:08 - Action 'Align differences after successful update' started.
+ 11:30:09 - Action 'Align differences after successful update' successfully finished.
+ 11:30:09 - Action 'Clean up update data' started.
+ 11:30:09 - Action 'Clean up update data' successfully finished.
+ 11:30:10 - Action 'Open Project' started.
+ 11:30:26 - Action 'Open Project' successfully finished.
+11:30:26 - Workflow 'Update workflow.' successfully finished.

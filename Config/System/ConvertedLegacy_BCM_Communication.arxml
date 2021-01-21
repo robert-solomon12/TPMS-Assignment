@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-1.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>VehicleProject</SHORT-NAME>
+      <ELEMENTS>
+        <SYSTEM>
+          <SHORT-NAME>System</SHORT-NAME>
+          <FIBEX-ELEMENTS>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="CAN-CLUSTER">/Cluster/CAN00</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="ECU-INSTANCE">/ECU/BCM</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/IPDUGroup/BCM_oCAN00_Tx</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/CanFrame/IndicatorStatus_oCAN00</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/PDU/IndicatorStatus_oCAN00</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/ISignal/IndStatus_oIndicatorStatus_oCAN00</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+          </FIBEX-ELEMENTS>
+        </SYSTEM>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>Cluster</SHORT-NAME>
+      <ELEMENTS>
+        <CAN-CLUSTER>
+          <SHORT-NAME>CAN00</SHORT-NAME>
+          <LONG-NAME>
+            <L-4 L="FOR-ALL">IndicatorsDB</L-4>
+          </LONG-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="DV:ToolData">
+                <SD GID="DV:ToolName">Vector Legacy Database Converter</SD>
+                <SD GID="DV:ToolVersion">1.8.17.0</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <CAN-CLUSTER-VARIANTS>
+            <CAN-CLUSTER-CONDITIONAL>
+              <PHYSICAL-CHANNELS>
+                <CAN-PHYSICAL-CHANNEL>
+                  <SHORT-NAME>CHNL</SHORT-NAME>
+                  <COMM-CONNECTORS>
+                    <COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                      <COMMUNICATION-CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/ECU/BCM/CN_CAN00</COMMUNICATION-CONNECTOR-REF>
+                    </COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                  </COMM-CONNECTORS>
+                  <FRAME-TRIGGERINGS>
+                    <CAN-FRAME-TRIGGERING>
+                      <SHORT-NAME>FT_IndicatorStatus</SHORT-NAME>
+                      <FRAME-PORT-REFS>
+                        <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/BCM/CN_CAN00/FP_IndicatorStatus_Tx</FRAME-PORT-REF>
+                      </FRAME-PORT-REFS>
+                      <FRAME-REF DEST="CAN-FRAME">/CanFrame/IndicatorStatus_oCAN00</FRAME-REF>
+                      <PDU-TRIGGERINGS>
+                        <PDU-TRIGGERING-REF-CONDITIONAL>
+                          <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/Cluster/CAN00/CHNL/PT_IndicatorStatus</PDU-TRIGGERING-REF>
+                        </PDU-TRIGGERING-REF-CONDITIONAL>
+                      </PDU-TRIGGERINGS>
+                      <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                      <IDENTIFIER>32</IDENTIFIER>
+                    </CAN-FRAME-TRIGGERING>
+                  </FRAME-TRIGGERINGS>
+                  <I-SIGNAL-TRIGGERINGS>
+                    <I-SIGNAL-TRIGGERING>
+                      <SHORT-NAME>ST_IndStatus_oIndicatorStatus</SHORT-NAME>
+                      <I-SIGNAL-PORT-REFS>
+                        <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/BCM/CN_CAN00/SP_IndStatus_oIndicatorStatus_Tx</I-SIGNAL-PORT-REF>
+                      </I-SIGNAL-PORT-REFS>
+                      <I-SIGNAL-REF DEST="I-SIGNAL">/ISignal/IndStatus_oIndicatorStatus_oCAN00</I-SIGNAL-REF>
+                    </I-SIGNAL-TRIGGERING>
+                  </I-SIGNAL-TRIGGERINGS>
+                  <PDU-TRIGGERINGS>
+                    <PDU-TRIGGERING>
+                      <SHORT-NAME>PT_IndicatorStatus</SHORT-NAME>
+                      <I-PDU-PORT-REFS>
+                        <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/BCM/CN_CAN00/PP_IndicatorStatus_Tx</I-PDU-PORT-REF>
+                      </I-PDU-PORT-REFS>
+                      <I-PDU-REF DEST="I-SIGNAL-I-PDU">/PDU/IndicatorStatus_oCAN00</I-PDU-REF>
+                      <I-SIGNAL-TRIGGERINGS>
+                        <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                          <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/Cluster/CAN00/CHNL/ST_IndStatus_oIndicatorStatus</I-SIGNAL-TRIGGERING-REF>
+                        </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                      </I-SIGNAL-TRIGGERINGS>
+                    </PDU-TRIGGERING>
+                  </PDU-TRIGGERINGS>
+                </CAN-PHYSICAL-CHANNEL>
+              </PHYSICAL-CHANNELS>
+              <PROTOCOL-NAME>CAN</PROTOCOL-NAME>
+            </CAN-CLUSTER-CONDITIONAL>
+          </CAN-CLUSTER-VARIANTS>
+        </CAN-CLUSTER>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>ECU</SHORT-NAME>
+      <ELEMENTS>
+        <ECU-INSTANCE>
+          <SHORT-NAME>BCM</SHORT-NAME>
+          <ASSOCIATED-COM-I-PDU-GROUP-REFS>
+            <ASSOCIATED-COM-I-PDU-GROUP-REF DEST="I-SIGNAL-I-PDU-GROUP">/IPDUGroup/BCM_oCAN00_Tx</ASSOCIATED-COM-I-PDU-GROUP-REF>
+          </ASSOCIATED-COM-I-PDU-GROUP-REFS>
+          <COMM-CONTROLLERS>
+            <CAN-COMMUNICATION-CONTROLLER>
+              <SHORT-NAME>CT_CAN00</SHORT-NAME>
+              <CAN-COMMUNICATION-CONTROLLER-VARIANTS>
+                <CAN-COMMUNICATION-CONTROLLER-CONDITIONAL/>
+              </CAN-COMMUNICATION-CONTROLLER-VARIANTS>
+            </CAN-COMMUNICATION-CONTROLLER>
+          </COMM-CONTROLLERS>
+          <CONNECTORS>
+            <CAN-COMMUNICATION-CONNECTOR>
+              <SHORT-NAME>CN_CAN00</SHORT-NAME>
+              <COMM-CONTROLLER-REF DEST="CAN-COMMUNICATION-CONTROLLER">/ECU/BCM/CT_CAN00</COMM-CONTROLLER-REF>
+              <ECU-COMM-PORT-INSTANCES>
+                <FRAME-PORT>
+                  <SHORT-NAME>FP_IndicatorStatus_Tx</SHORT-NAME>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </FRAME-PORT>
+                <I-PDU-PORT>
+                  <SHORT-NAME>PP_IndicatorStatus_Tx</SHORT-NAME>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </I-PDU-PORT>
+                <I-SIGNAL-PORT>
+                  <SHORT-NAME>SP_IndStatus_oIndicatorStatus_Tx</SHORT-NAME>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </I-SIGNAL-PORT>
+              </ECU-COMM-PORT-INSTANCES>
+            </CAN-COMMUNICATION-CONNECTOR>
+          </CONNECTORS>
+        </ECU-INSTANCE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>IPDUGroup</SHORT-NAME>
+      <ELEMENTS>
+        <I-SIGNAL-I-PDU-GROUP>
+          <SHORT-NAME>BCM_oCAN00_Tx</SHORT-NAME>
+          <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+          <I-SIGNAL-I-PDUS>
+            <I-SIGNAL-I-PDU-REF-CONDITIONAL>
+              <I-SIGNAL-I-PDU-REF DEST="I-SIGNAL-I-PDU">/PDU/IndicatorStatus_oCAN00</I-SIGNAL-I-PDU-REF>
+            </I-SIGNAL-I-PDU-REF-CONDITIONAL>
+          </I-SIGNAL-I-PDUS>
+        </I-SIGNAL-I-PDU-GROUP>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>CanFrame</SHORT-NAME>
+      <ELEMENTS>
+        <CAN-FRAME>
+          <SHORT-NAME>IndicatorStatus_oCAN00</SHORT-NAME>
+          <FRAME-LENGTH>1</FRAME-LENGTH>
+          <PDU-TO-FRAME-MAPPINGS>
+            <PDU-TO-FRAME-MAPPING>
+              <SHORT-NAME>IndicatorStatus</SHORT-NAME>
+              <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+              <PDU-REF DEST="I-SIGNAL-I-PDU">/PDU/IndicatorStatus_oCAN00</PDU-REF>
+              <START-POSITION>0</START-POSITION>
+            </PDU-TO-FRAME-MAPPING>
+          </PDU-TO-FRAME-MAPPINGS>
+        </CAN-FRAME>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>PDU</SHORT-NAME>
+      <ELEMENTS>
+        <I-SIGNAL-I-PDU>
+          <SHORT-NAME>IndicatorStatus_oCAN00</SHORT-NAME>
+          <LENGTH>1</LENGTH>
+          <I-PDU-TIMING-SPECIFICATIONS>
+            <I-PDU-TIMING>
+              <MINIMUM-DELAY>0</MINIMUM-DELAY>
+              <TRANSMISSION-MODE-DECLARATION>
+                <TRANSMISSION-MODE-FALSE-TIMING>
+                  <CYCLIC-TIMING>
+                    <TIME-OFFSET>
+                      <VALUE>0</VALUE>
+                    </TIME-OFFSET>
+                    <TIME-PERIOD>
+                      <VALUE>0.1</VALUE>
+                    </TIME-PERIOD>
+                  </CYCLIC-TIMING>
+                </TRANSMISSION-MODE-FALSE-TIMING>
+                <TRANSMISSION-MODE-TRUE-TIMING>
+                  <CYCLIC-TIMING>
+                    <TIME-OFFSET>
+                      <VALUE>0</VALUE>
+                    </TIME-OFFSET>
+                    <TIME-PERIOD>
+                      <VALUE>0.1</VALUE>
+                    </TIME-PERIOD>
+                  </CYCLIC-TIMING>
+                </TRANSMISSION-MODE-TRUE-TIMING>
+              </TRANSMISSION-MODE-DECLARATION>
+            </I-PDU-TIMING>
+          </I-PDU-TIMING-SPECIFICATIONS>
+          <I-SIGNAL-TO-PDU-MAPPINGS>
+            <I-SIGNAL-TO-I-PDU-MAPPING>
+              <SHORT-NAME>IndStatus</SHORT-NAME>
+              <I-SIGNAL-REF DEST="I-SIGNAL">/ISignal/IndStatus_oIndicatorStatus_oCAN00</I-SIGNAL-REF>
+              <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+              <START-POSITION>0</START-POSITION>
+              <TRANSFER-PROPERTY>PENDING</TRANSFER-PROPERTY>
+            </I-SIGNAL-TO-I-PDU-MAPPING>
+          </I-SIGNAL-TO-PDU-MAPPINGS>
+          <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+        </I-SIGNAL-I-PDU>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>ISignal</SHORT-NAME>
+      <ELEMENTS>
+        <I-SIGNAL>
+          <SHORT-NAME>IndStatus_oIndicatorStatus_oCAN00</SHORT-NAME>
+          <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+          <INIT-VALUE>
+            <NUMERICAL-VALUE-SPECIFICATION>
+              <VALUE>0</VALUE>
+            </NUMERICAL-VALUE-SPECIFICATION>
+          </INIT-VALUE>
+          <LENGTH>8</LENGTH>
+          <NETWORK-REPRESENTATION-PROPS>
+            <SW-DATA-DEF-PROPS-VARIANTS>
+              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/sint8</BASE-TYPE-REF>
+              </SW-DATA-DEF-PROPS-CONDITIONAL>
+            </SW-DATA-DEF-PROPS-VARIANTS>
+          </NETWORK-REPRESENTATION-PROPS>
+          <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/IndStatus</SYSTEM-SIGNAL-REF>
+        </I-SIGNAL>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>Signal</SHORT-NAME>
+      <ELEMENTS>
+        <SYSTEM-SIGNAL>
+          <SHORT-NAME>IndStatus</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+          <PHYSICAL-PROPS>
+            <SW-DATA-DEF-PROPS-VARIANTS>
+              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/Semantics/CM_IndStatus</COMPU-METHOD-REF>
+              </SW-DATA-DEF-PROPS-CONDITIONAL>
+            </SW-DATA-DEF-PROPS-VARIANTS>
+          </PHYSICAL-PROPS>
+        </SYSTEM-SIGNAL>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

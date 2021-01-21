@@ -1,0 +1,22 @@
+﻿08 Sep 2020 11:29:54 - Opening workspace 'C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.dcf'...
+08 Sep 2020 11:29:56 - Loading file PlatformTypes_AR4.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\AUTOSAR\PlatformTypes_AR4.arxml)
+08 Sep 2020 11:29:56 - Loading file BswM_swc.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\ServiceComponents\BswM_swc.arxml)
+08 Sep 2020 11:29:56 - Loading file ComM_swc.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\ServiceComponents\ComM_swc.arxml)
+08 Sep 2020 11:29:56 - Loading file Det_swc.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\ServiceComponents\Det_swc.arxml)
+08 Sep 2020 11:29:56 - Loading file EcuM_swc.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\ServiceComponents\EcuM_swc.arxml)
+08 Sep 2020 11:29:57 - Loading file DataTypes.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\DataTypes.arxml)
+08 Sep 2020 11:29:57 - Loading file Packages.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Packages.arxml)
+08 Sep 2020 11:29:57 - Loading file PortInterfaces.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\PortInterfaces.arxml)
+08 Sep 2020 11:29:57 - Loading file Template.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.arxml)
+08 Sep 2020 11:29:57 - Opened workspace 'C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.dcf' successfully.
+08 Sep 2020 11:29:58 - Start import
+08 Sep 2020 11:29:58 - Importing file (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\System\ConvertedLegacy_BCM.arxml).
+08 Sep 2020 11:29:59 - Merging imported data
+08 Sep 2020 11:30:00 - Finished import
+08 Sep 2020 11:30:00 - Saving workspace 'C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.dcf'...
+08 Sep 2020 11:30:01 - Saving file DataTypes.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\DataTypes.arxml)
+08 Sep 2020 11:30:01 - Saving file Packages.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Packages.arxml)
+08 Sep 2020 11:30:01 - Saving file Template.arxml (C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.arxml)
+08 Sep 2020 11:30:01 - Saved workspace 'C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.dcf' successfully.
+08 Sep 2020 11:30:01 - Closing workspace 'C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.dcf'...
+08 Sep 2020 11:30:01 - Closed workspace 'C:\Users\Brendan\AppData\Local\Temp\DaVinci\Cfg-0594639\Workflow\1599560927157-0\Config\Developer\Template.dcf' successfully.
